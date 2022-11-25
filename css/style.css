@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+body,
+section,
+h1 {
+  margin: 0;
+}
+h1 {
+}
+.menu {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu a {
+  display: block;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#accueil {
+  background-color: rgb(255, 0, 0);
+}
+#inscription {
+  background-color: rgb(255, 140, 0);
+}
+#galerie {
+  background-color: rgb(255, 251, 0);
+}
+#tableau {
+  background-color: rgb(94, 255, 0);
+}
+#video {
+  background-color: rgb(0, 255, 191);
+}
+#pied-page {
+  background-color: rgb(0, 225, 255);
+}
