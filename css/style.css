@@ -1,44 +1,65 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Ralentir ralentir le défilement de la page. */
+  font-family:Georgia, 'Times New Roman', Times, serif /* Police de caractères */
 }
 body,
 section,
 h1 {
-  margin: 0;
+  margin: 0; /* Par défaut */
+}
+section,
+h1 {
+  display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
+  justify-content: center; /* Placer les objets autour du centre */
+  align-content: center; /* Placer les objets autour du centre */
+  align-items: center; /* Placer les objets autour du centre */
 }
 h1 {
+  font-size: 3rem; /* Taille de caractère */
 }
-.menu {
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
+nav {
+  /* Partie 1 - Positionner le menu dans la partie supérieure de la fenêtre. Le référentiel est la fenêtre avec le positionnement «fixed». */
+  position: fixed; /* Il reste toujours au même endroit même si la page défile. */
+  top: 5px; /* Pour le descendre un peu */
+  right: 0;
+  /* Partie 2 - La configuration du conteneur flex. */
+  display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
+  justify-content: space-around; /* Place les éléments avec un espace réparti uniformément autour du début et de la fin de la liste. */
+  flex-wrap: wrap; /* Changer de ligne automatiquement, si les éléments flexibles sont forcés sur une ligne ou peuvent s'étendre sur plusieurs. */
   width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /* Police de caractères */
 }
-.menu a {
-  display: block;
+nav a {
+  display: block; /* Un élément dont la propriété display est définie sur block commence sur une nouvelle ligne et occupe la largeur d'écran disponible. */
+  flex: 0 1 100px; /* 0: Utiliser l'espace restant, 1: Retrécir par rapport aux reste des articles flexibles à l'intérieur du même conteneur.
+  100: chaque élément va mesurer 100px. */
+  text-decoration: none; /* Ajoute un soulignement, un surlignement, un saut de ligne ou une combinaisons de lignes au texte sélectionné. */
 }
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; /* Un grand espace entre chaque section. */
+  flex-direction: column; /* Les éléments de la boîte flexible sont classés de la même manière que la direction du texte. */
+  justify-content: space-around; /* Place les éléments avec un espace réparti uniformément autour du début et de la fin de la liste. */
 }
+/* Chacune des sections est ciblé avec leur «id». + la couleur pour chaque arrière-plan. */
 #accueil {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 93, 93);
 }
 #inscription {
-  background-color: rgb(255, 140, 0);
+  background-color: rgb(255, 255, 79);
+}
+#article {
+  background-color: rgb(253, 71, 223);
 }
 #galerie {
-  background-color: rgb(255, 251, 0);
+  background-color: rgb(96, 255, 255);
 }
 #tableau {
-  background-color: rgb(94, 255, 0);
+  background-color: rgb(128, 10, 29);
 }
 #video {
-  background-color: rgb(0, 255, 191);
+  background-color: rgb(71, 71, 253);
 }
 #pied-page {
-  background-color: rgb(0, 225, 255);
+  background-color: rgb(93, 255, 93);
 }

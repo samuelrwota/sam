@@ -1,0 +1,11 @@
+#inscription form {
+  display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
+  flex-direction: column; /* Les éléments de la boîte flexible sont classés de la même manière que la direction du texte. */
+  justify-content: space-around; /* Place les éléments avec un espace réparti uniformément autour du début et de la fin de la liste. */
+}
+#inscription form label {
+  margin: 10px 0; /* Margin Top Right */
+}
+#inscription.langage {
+  display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
+}

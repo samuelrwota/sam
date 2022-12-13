@@ -6,67 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css">
   </head>
   <body>
-    <!-- ////////////////////////////////////////// MENU /////////////////////////////////////// -->
-    <nav class="menu">
-      <a href="accueil">Accueil</a>
-      <a href="accueil">Inscription</a>
-      <a href="accueil">Galerie</a>
-      <a href="accueil">Tableau</a>
-      <a href="accueil">Video</a>
-      <a href="accueil">Pied de page</a>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#inscription">Inscription</a>
+      <a href="#article">Article</a>
+      <a href="#video">Vidéo</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#pied-page">Pied&nbsp;de&nbsp;page</a>
     </nav>
-    <!-- ////////////////////////////////////////// ACCUEIL /////////////////////////////////////// -->
+    <!-- (section>h1>lorem2)*5 -->
     <section id="accueil">
-      <h1>Accueil</h1>
+      <h1>TP2</h1>
+      <h2>Auteur: Samuel Rwota</h2>
+      <p>1W1-Mise en page Web - Collège de Maisonneuve</p>
     </section>
-    <!-- ////////////////////////////////////////// INSCRIPTION /////////////////////////////////////// -->
-    <section id="inscription">
-      <h1>Inscription</h1>
-    </section>
-    <!-- ////////////////////////////////////////// GALERIE /////////////////////////////////////// -->
     <section id="galerie">
       <h1>Galerie</h1>
+      <figure class="fig__galerie">
+        <figure>
+          <img src="images/autumn.jpeg" alt="automne" width="400" height="400">
+          <figcaption>Automne.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/neige.webp" alt="hiver" width="400" height="400">
+          <figcaption>Hiver</figcaption>
+        </figure>
+        <figure>
+          <img src="images/paysage.jpg" alt="printemps" width="400" height="400">
+          <figcaption>Printemps</figcaption>
+        </figure>
+        <figure>
+          <img src="images/summer.jpg" alt="ete" width="400" height="400">
+          <figcaption>Été</figcaption>
+        </figure>
+      </figure>
     </section>
-    <!-- ////////////////////////////////////////// TABLEAU /////////////////////////////////////// -->
+          <!-- //////////////////////////////////// INSCRIPTION ///////////////////////////////////// -->
+    <section id="inscription">
+      <h1>Inscription</h1>
+      <form action="">
+        <label > Nom
+          <input placeholder= "Entrez votre nom" type="text" name="" id="txtNom">
+        </label>
+      <form action="">
+          <label> Prénom
+          <input type="text" name="" id="txtPrenom">
+          </label>
+      <form action="">
+          <label > Courriel
+          <input type="email" name="" id="txtEmail">
+          </label>
+          <div class="langage">
+            <label for=""> HTML
+              <input type="checkbox" name="" id="html">
+            </label>
+            <label for=""> CSS
+              <input type="checkbox" name="" id="css">
+            </label>
+            <label for=""> JavaScript
+              <input type="checkbox" name="" id="js">
+            </label>
+            <label for=""> PHP
+              <input type="checkbox" name="" id="php">
+            </label>
+          </div>
+      </form>
+    </section>
+    <section id="article">
+      <h1>Article</h1>
+    </section>
+       <!-- //////////////////////////////////// VIDEO ///////////////////////////////////// -->
+    <section id="video">
+      <h1>Vidéo</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/106VN97TGfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <!-- //////////////////////////////////// TABLEAU ///////////////////////////////////// -->
     <section id="tableau">
       <h1>Tableau</h1>
-      <!-- table>(tr>(td>lorem2)*3)*4 -->
-      <table>
+      <table class="tableau">
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Nesciunt, id.</td>
-          <td>Expedita, laudantium?</td>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Programme</th>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Repellat, ducimus!</td>
-          <td>Error, facilis.</td>
+          <td>Rwota</td>
+          <td>Sammuel</td>
+          <td>TIM</td>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Excepturi, nisi.</td>
-          <td>Vel, aliquid?</td>
+          <td>Lafleur</td>
+          <td>Rose</td>
+          <td>SIM</td>
         </tr>
         <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Quas, tenetur.</td>
-          <td>Deleniti, quia.</td>
+          <td>Larock</td>
+          <td>Pierre</td>
+          <td>POL</td>
         </tr>
       </table>
     </section>
-    <!-- ////////////////////////////////////////// VIDEO /////////////////////////////////////// -->
-    <section id="video">
-      <h1>Video</h1>
-    </section>
-    <!-- ////////////////////////////////////////// PIED DE PAGE /////////////////////////////////////// -->
+    <!-- //////////////////////////////// PIED DE PAGE ///////////////////////////////////// -->
     <section id="pied-page">
       <h1>Pied de page</h1>
     </section>
-    <header></header>
-    <main></main>
-    <footer></footer>
   </body>
 </html>
+
