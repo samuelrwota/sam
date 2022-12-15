@@ -1,13 +1,17 @@
 html {
   scroll-behavior: smooth; /* Ralentir ralentir le défilement de la page. */
-  font-family:Georgia, 'Times New Roman', Times, serif /* Police de caractères */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Police de caractères */
 }
 body,
 section,
 h1 {
   margin: 0; /* Par défaut */
 }
-section,
+#accueil,
+#inscription,
+#tableau,
+#video,
+#pied-page,
 h1 {
   display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
   justify-content: center; /* Placer les objets autour du centre */
@@ -38,6 +42,7 @@ nav a {
 }
 section {
   min-height: 100vh; /* Un grand espace entre chaque section. */
+  width: 100vw; /* 100vw est identique à la largeur : 100 % */
   flex-direction: column; /* Les éléments de la boîte flexible sont classés de la même manière que la direction du texte. */
   justify-content: space-around; /* Place les éléments avec un espace réparti uniformément autour du début et de la fin de la liste. */
 }

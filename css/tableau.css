@@ -1,14 +1,13 @@
 .tableau {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Police de caractère dans le tableau. */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /* Police de caractère dans le tableau. */
   border: 1px solid #bbb; /* La bordure. */
   border-collapse: collapse; /* Réduit en une seule bordure.*/
 }
-
 .tableau th {
   padding: 15px;
   border: 1px solid #ccc; /* La bordure. */
 }
-
 .tableau td {
   padding: 10px;
   border: 1px solid #ccc; /* La bordure. */

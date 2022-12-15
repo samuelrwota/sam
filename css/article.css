@@ -1,0 +1,16 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: auto;
+}
+.saison {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+p,
+h3 {
+  text-align: right;
+}

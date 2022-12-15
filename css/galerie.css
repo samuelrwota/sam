@@ -1,10 +1,8 @@
-#galerie{}
-
 .fig__galerie {
-    display : flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
-    /* justify-content: space-between; /* Les articles sont répartis uniformément dans la ligne. */
-    flex-direction: column;
-    flex-wrap: wrap; /* */
-        text-align: center;
+  display: flex; /* Un axe principal qui est horizontale, une collection d'éléments. */
+  /* justify-content: space-between; /* Les articles sont répartis uniformément dans la ligne. */
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /* */
+  text-align: center;
 }
-
